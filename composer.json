@@ -1,0 +1,24 @@
+{
+    "name": "dakota/sumome",
+    "description": "Free Tools to grow your email list from SumoMe.com for Croogo",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": "~3.2",
+        "croogo/croogo": "3.0.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SumoMe\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SumoMe\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
