@@ -1,3 +1,3 @@
 <?php
 
-\Croogo\Core\Croogo::hookHelper('*', 'Sumome.Sumome');
+\Croogo\Core\Croogo::hookHelper('*', 'SumoMe.SumoMe');

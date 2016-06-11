@@ -4,7 +4,7 @@ use Cake\ORM\TableRegistry;
 /**
  * Class SumomeActivation
  */
-class SumomeActivation
+class SumoMeActivation
 {
     public function beforeActivation()
     {
@@ -20,7 +20,10 @@ class SumomeActivation
     public function onActivation()
     {
         $settings = TableRegistry::get('Croogo/Settings.Settings');
-        $settings->write('Service.sumome_key', '');
+        $settings->write('Service.sumome_key', '', [
+            'title' => 'SumoMe Site ID',
+            'editable' => true
+        ]);
 
         return true;
     }
