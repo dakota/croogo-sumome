@@ -3,12 +3,12 @@
 namespace SumoMe\View\Helper;
 
 use Cake\Core\Configure;
-use Croogo\Core\View\Helper\CroogoAppHelper;
+use Cake\View\Helper;
 
 /**
  * Class SumomeHelper
  */
-class SumoMeHelper extends CroogoAppHelper
+class SumoMeHelper extends Helper
 {
     public $helpers = ['Html'];
 
