@@ -14,7 +14,7 @@ class SumoMeHelper extends Helper
 
     public function beforeRender()
     {
-        if ($this->request->param('prefix') === 'admin') {
+        if ($this->getView()->getRequest()->getParam('prefix') === 'admin') {
             return;
         }
 
